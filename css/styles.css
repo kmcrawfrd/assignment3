@@ -1,0 +1,110 @@
+:root {
+    --silver-silver: #c3d4e1;
+    --silver-brown: #493e34;
+    --silver-tan: #e5ddd1;
+
+    --jesse-red: #a34a3b;
+    --jesse-brown: #28221d;
+    --jesse-tan: #8d8073;
+}
+
+* {
+    box-sizing: border-box;
+}
+img {
+    max-width: 100%;
+}
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: var(--silver-brown);
+    background-color: var(--silver-silver);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: var(--silver-brown);
+    color: var(--silver-silver);
+    text-align: center;
+    padding: 50px;
+}
+
+.character {
+    padding: 20px;
+    text-align: center;
+}
+
+.usable-items {
+    text-align: center;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    background-color: var(--silver-brown);
+}
+
+h1 {
+    font-size: 75px;
+    font-family: cursive;
+}
+
+.character-icon {
+    background-color: var(--silver-tan);
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 10px;
+    border-radius: 50px;
+}
+
+.character-image {
+    border-radius: 50px;
+    background-color: var(--silver-brown);
+}
+
+.usable-items img {
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: var(--silver-tan);
+}
+
+.active {
+    background-color: var(--silver-silver);
+    border-radius: 50px;
+}
+
+#shirt1:hover, #shirt2:hover, #coffee:hover, #tea:hover, #cactus:hover, #rose:hover, #chips:hover, #pickles:hover, #character-icon1:hover, #character-icon2:hover {
+    background-color: var(--silver-silver);
+    border-radius: 50px;
+}
+
+@media screen and (max-width: 1110px) {
+    body {
+        flex-direction: column;
+    }
+    header {
+        display: flex;
+        flex-direction: row;
+    }
+    .usable-items {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .character {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .usable-items {
+        grid-template-columns: 1fr 1fr;
+    }
+}
